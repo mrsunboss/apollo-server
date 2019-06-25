@@ -41,7 +41,9 @@ export const requiresFieldsMissingOnBase = (schema: GraphQLSchema) => {
               errorWithCode(
                 'REQUIRES_FIELDS_MISSING_ON_BASE',
                 logServiceAndType(serviceName, typeName, fieldName) +
-                  `requires the field \`${selection.name.value}\` to be @external. @external fields must exist on the base type, not an extension.`,
+                  `requires the field \`${
+                    selection.name.value
+                  }\` to be @external. @external fields must exist on the base type, not an extension.`,
               ),
             );
           }

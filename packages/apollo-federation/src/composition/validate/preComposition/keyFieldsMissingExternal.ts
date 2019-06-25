@@ -102,7 +102,9 @@ export const keyFieldsMissingExternal = ({
                 errorWithCode(
                   'KEY_FIELDS_MISSING_EXTERNAL',
                   logServiceAndType(serviceName, parentType.name) +
-                    `A @key directive specifies the \`${fieldDef.name}\` field which has no matching @external field.`,
+                    `A @key directive specifies the \`${
+                      fieldDef.name
+                    }\` field which has no matching @external field.`,
                 ),
               );
             }

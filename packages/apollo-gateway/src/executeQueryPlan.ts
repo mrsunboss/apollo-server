@@ -214,7 +214,9 @@ async function executeFetch<TContext>(
 
     if (receivedEntities.length !== representations.length) {
       throw new Error(
-        `Expected "data._entities" to contain ${representations.length} elements`,
+        `Expected "data._entities" to contain ${
+          representations.length
+        } elements`,
       );
     }
 

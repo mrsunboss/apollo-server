@@ -177,7 +177,9 @@ function splitRootFields(
 
     if (!owningService) {
       throw new GraphQLError(
-        `Couldn't find owning service for field "${parentType.name}.${fieldDef.name}"`,
+        `Couldn't find owning service for field "${parentType.name}.${
+          fieldDef.name
+        }"`,
         fieldNode,
       );
     }
@@ -231,7 +233,9 @@ function splitRootFieldsSerially(
 
     if (!owningService) {
       throw new GraphQLError(
-        `Couldn't find owning service for field "${parentType.name}.${fieldDef.name}"`,
+        `Couldn't find owning service for field "${parentType.name}.${
+          fieldDef.name
+        }"`,
         fieldNode,
       );
     }
@@ -264,7 +268,9 @@ function splitSubfields(
 
     if (!owningService) {
       throw new GraphQLError(
-        `Couldn't find owning service for field "${parentType.name}.${fieldDef.name}"`,
+        `Couldn't find owning service for field "${parentType.name}.${
+          fieldDef.name
+        }"`,
         fieldNode,
       );
     }
@@ -308,7 +314,9 @@ function splitSubfields(
 
         if (!keyFields) {
           throw new GraphQLError(
-            `Couldn't find keys for type "${parentType.name}}" in service "${baseService}"`,
+            `Couldn't find keys for type "${
+              parentType.name
+            }}" in service "${baseService}"`,
             fieldNode,
           );
         }
